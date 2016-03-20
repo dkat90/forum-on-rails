@@ -71,3 +71,22 @@ body {
     color:#308014;
   }
 }
+
+#post_content{
+  background: white;
+  padding: 2em 5%;
+  border-radius: 0.5em;
+  h1{
+    font-weight: 100px;
+    font-size: 2em;
+    color: #0044ff;
+    margin-top:0;
+
+  }
+  p{
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+}
