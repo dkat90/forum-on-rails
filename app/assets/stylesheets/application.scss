@@ -31,7 +31,7 @@ body {
     a {
       line-height: 60px;
       background:#C0D9AF;
-      padding: 0.5em 1em;
+      padding: 0.25em 0.75em;
       border-radius: 0.2em;
       color:#0044ff;
       text-decoration: none;
@@ -53,6 +53,9 @@ body {
   background:#C0D9AF;
   padding: 2em 5%;
   border-radius: .5em;
+  #posts_title{
+    font-size: 1.75rem;
+  }
   .post{
     margin: 1em 0;
     padding: 1em 0;
@@ -74,10 +77,21 @@ body {
   }
 }
 
+.button {
+  color: #308014;
+  border: 1px solid #0044ff;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  margin-right: 2%;
+}
+
 #post_content{
-  background: white;
+  background: #C0D9AF;
   padding: 2em 5%;
   border-radius: 0.5em;
+  width:100%;
+  text-align: left;
   h1{
     font-weight: 100px;
     font-size: 2em;
@@ -91,4 +105,59 @@ body {
     font-weight: 100;
     line-height: 1.5;
   }
+  #comments {
+    .comment {
+      border-bottom: 1px solid;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      .content{
+        width:75%;
+        float:left;
+      }
+      .buttons {
+        width: 25%;
+        float:left;
+        font-size: 0.8em;
+        text-align: right;
+        padding-top: 1.5em;
+        a {
+          color:#0044ff;
+          border: 1px solid #0044ff;
+          padding: 0.5em 1em;
+          border-radius: 0.2em;
+          text-decoration: none;
+          margin-right: 2%;
+        }
+      }
+      .comment_content {
+        margin:0;
+        padding: 0;
+      }
+      .comment_author {
+        color: black;
+        margin-top: 0.5rem;
+        font-size: 0.6rem;
+        font-weight: 700;
+      }
+    }
+    input[type="submit"] {
+      border: none;
+      background: blue;
+      color: white;
+      font-weight: 100;
+      padding: 0.5em 1em;
+      border-radius: 0.4em 1em;
+    }
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      border: 1px solid #black;
+      border-radius: 0.2em;
+      margin: 1em 0;
+    }
+  }
+}
+#like_and_unlike {
+  display: flex;
+  flex-wrap: wrap;
 }

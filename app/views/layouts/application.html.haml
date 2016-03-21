@@ -16,6 +16,8 @@
       #buttons
         - if user_signed_in?
           = link_to "New Post", new_post_path
+          = link_to "Sign Out", destroy_user_session_path, method: :delete
+          = link_to "Edit Profile", edit_user_registration_path, method: :get
         - else
           =link_to "Sign Up", new_user_registration_path
           =link_to "Sign In", new_user_session_path
@@ -26,22 +28,3 @@
 
   .wrapper
     = yield
-
--# <!DOCTYPE html>
--# <html>
--# <head>
--#   <title>Forum</title>
--#   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
--#   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
--#   <%= csrf_meta_tags %>
--# </head>
--# <body>
--#
--# <p class="notice"><%= notice %></p>
--#  <p class="alert"><%= alert %></p>
--#
--#
--# <%= yield %>
--#
--# </body>
--# </html>
