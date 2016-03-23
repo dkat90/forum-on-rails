@@ -31,6 +31,14 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
 gem 'devise', '~> 3.5', '>= 3.5.6'
 
+gem 'acts_as_votable', '~> 0.10.0'
+
+gem 'rails_12factor', group: :production
+
+gem 'puma'
+
+# ruby "2.2.0"
+
 
 
 # Use ActiveModel has_secure_password

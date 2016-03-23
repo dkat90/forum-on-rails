@@ -8,3 +8,10 @@
         by
         = post.user.email
       %h2.title= link_to post.title, post
+    .like_and_unlike
+      = link_to like_post_path(post), method: :put do
+        Hi-Five! <i class="fa fa-hand-paper-o"></i>
+      = post.get_upvotes.size
+      = link_to dislike_post_path(post), method: :put do
+        Meh <i class="fa fa-meh-o"></i>
+      = post.get_downvotes.size
